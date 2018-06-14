@@ -11,4 +11,4 @@ Rabbitmq at my-rabbitmq.domain.com:15672 is up!
 
 Kubernetes
 ----------
-Can be used as an `InitContainer` in Kubernetes to verify if rabbitmq is up before deploying a pod which depends on rabbitmq.
+Can be used as an `InitContainer` in Kubernetes, to verify if rabbitmq is up, before deploying a pod which depends on rabbitmq.
