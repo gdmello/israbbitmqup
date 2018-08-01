@@ -4,4 +4,10 @@ RUN pip install requests argparse
 
 COPY entrypoint.py /
 
-ENTRYPOINT ["python", "entrypoint.py"]
+ENV ATTEMPTS=20
+
+ENV SLEEP=1
+
+ENV RABBITMQ_MANAGEMENT_PORT=15672
+
+ENTRYPOINT ["entry.sh"]
